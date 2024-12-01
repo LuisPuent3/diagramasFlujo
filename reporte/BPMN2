@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <process id="procesamientoOrdenes" name="Procesamiento de Órdenes de Compra" isExecutable="false">
+    <startEvent id="start" name="Inicio"/>
+    <sequenceFlow id="flow1" sourceRef="start" targetRef="ordenCliente"/>
+    <task id="ordenCliente" name="Orden del Cliente"/>
+    <sequenceFlow id="flow2" sourceRef="ordenCliente" targetRef="validarOrden"/>
+    <task id="validarOrden" name="Validar Orden"/>
+    <exclusiveGateway id="decisionOrden" name="Orden Válida?"/>
+    <sequenceFlow id="flow3" sourceRef="validarOrden" targetRef="decisionOrden"/>
+    
+    <!-- Si la orden es válida -->
+    <sequenceFlow id="flow4" sourceRef="decisionOrden" targetRef="prepararPedido" name="Sí"/>
+    <task id="prepararPedido" name="Preparar Pedido en Almacén"/>
+    <sequenceFlow id="flow5" sourceRef="prepararPedido" targetRef="actualizarInventario"/>
+    <task id="actualizarInventario" name="Actualizar Inventario"/>
+    <sequenceFlow id="flow6" sourceRef="actualizarInventario" targetRef="actualizarEstadoPedido"/>
+    <task id="actualizarEstadoPedido" name="Actualizar Estado del Pedido"/>
+    <sequenceFlow id="flow7" sourceRef="actualizarEstadoPedido" targetRef="confirmarEnvio"/>
+    <task id="confirmarEnvio" name="Confirmar Envío al Cliente"/>
+    <sequenceFlow id="flow8" sourceRef="confirmarEnvio" targetRef="end"/>
+    
+    <!-- Si la orden no es válida -->
+    <sequenceFlow id="flow9" sourceRef="decisionOrden" targetRef="notificarError" name="No"/>
+    <task id="notificarError" name="Notificar Error al Cliente"/>
+    <sequenceFlow id="flow10" sourceRef="notificarError" targetRef="end"/>
+
+    <endEvent id="end" name="Fin"/>
+  </process>
+</definitions>
