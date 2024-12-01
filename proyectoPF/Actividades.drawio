@@ -7,7 +7,7 @@
         <mxCell id="2" value="Inicio" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fillColor=#00B0F0;strokeColor=#0075A9;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="100" y="40" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Registrar Nueva Planta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4CCCC;strokeColor=#9C0006;" vertex="1" connectable="0" parent="1">
+        <mxCell id="3" value="Registrar Planta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4CCCC;strokeColor=#9C0006;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="100" y="160" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4" value="Realizar Diagnóstico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4CCCC;strokeColor=#9C0006;" vertex="1" connectable="0" parent="1">
@@ -41,3 +41,4 @@
     </mxGraphModel>
   </diagram>
 </mxfile>
+
