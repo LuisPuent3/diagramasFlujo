@@ -1,26 +1,31 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Página-1" id="0AZOgmrEUxtrt4yCa_DI">
-    <mxGraphModel dx="880" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="800" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="kzWZD1aquSMo_q36E_kf-1" value="&amp;nbsp;Mostrar resultados" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="190" width="120" height="80" as="geometry" />
+          <mxGeometry x="540" y="190" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kzWZD1aquSMo_q36E_kf-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;" edge="1" parent="1" source="kzWZD1aquSMo_q36E_kf-2" target="kzWZD1aquSMo_q36E_kf-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="kzWZD1aquSMo_q36E_kf-2" value="Calcular media" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="190" width="120" height="80" as="geometry" />
+        <mxCell id="kzWZD1aquSMo_q36E_kf-7" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kzWZD1aquSMo_q36E_kf-5">
+          <mxGeometry x="-0.2333" y="1" relative="1" as="geometry">
+            <mxPoint x="7" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kzWZD1aquSMo_q36E_kf-2" value="Calcular&lt;div&gt;estadísticas&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="190" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kzWZD1aquSMo_q36E_kf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;" edge="1" parent="1" source="kzWZD1aquSMo_q36E_kf-3" target="kzWZD1aquSMo_q36E_kf-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kzWZD1aquSMo_q36E_kf-3" value="Usuario" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="200" width="30" height="60" as="geometry" />
+          <mxGeometry x="160" y="200" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="kzWZD1aquSMo_q36E_kf-6" value="Programa" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=80;height=30;" vertex="1" parent="1">
-          <mxGeometry x="200" y="140" width="470" height="180" as="geometry" />
+        <mxCell id="kzWZD1aquSMo_q36E_kf-6" value="Sistema" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=80;height=30;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="410" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
